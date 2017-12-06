@@ -1,0 +1,72 @@
+@media all and (max-width: 768px){
+	/*Responsive Menu*/
+	.header-area{
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	.header-area .menu-btn{
+		display: block;
+		float: none;
+	}
+	.menu-area{
+		display: none;
+	}
+	.menu-area ul{
+        display: inline-block;
+    }
+    .menu-area ul li a{
+        padding: 25px 0;
+    }
+    .own-nav{
+    	position: absolute;
+    	top: 20px;
+    }
+	/*Responsive Menu Ends*/
+
+
+	/*ABOUT-AREA*/
+	.about-area{
+		overflow: hidden;
+		height: 1200px;
+	}
+	/*GALLERY-AREA*/
+	.gallery-area{
+	    
+    }
+    /*BLOG-AREA*/
+    .blog-area{
+		overflow: hidden;
+		height: 1700px;
+	}
+	/*SERVICE-AREA*/
+	.service-area{
+		height: 1200px;
+		overflow: hidden;
+	}
+	.service-area-bottom .service-box{
+		width: 100%;
+	}
+	/*SPONSORSHIP-AREA*/
+	.sponsorship-area{
+		height: 800px;
+	}
+	.sponsorship-area-bottom img{
+		margin-left: 100px;
+		margin-top: 50px;
+	}
+	/*CONTACT-AREA*/
+	.contact-area{
+		height: 1700px;
+	}
+	.contact-bottom1 input{
+		margin: 20px 0;
+	}
+    .contact-bottom1 button{
+    	margin: 20px 0;
+    }
+    .contact-bottom1 h4{
+    	margin: 20px 0;
+    }
+    .contact-bottom2 img{
+    	margin: 20px 0;
+    }
+}

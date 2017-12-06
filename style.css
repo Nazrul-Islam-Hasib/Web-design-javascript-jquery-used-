@@ -1,0 +1,533 @@
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    PRODUCT NAME: Hooky
+    AUTHOR: MD Nazrul Islam
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    CSS INDEX
+
+    01 FONTS
+    02 TUPOGRAPHY
+    03 HEADER AREA
+    04 ABOUT AREA
+    05 GALLERY AREA
+    06 BLOG AREA
+    07 SERVICE AREA
+    08 SPONSORSHIP AREA
+    09 CONTACT AREA
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    01 FONTS
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+@font-face{
+	src: url(fonts/brandon-grotesque-medium.ttf);
+	font-family: 'Brandon-Grotesque-Medium';
+}
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    02 TUPOGRAPHY
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    03 HEADER AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.header-area{
+	position: fixed;
+	background-color: rgba(0, 0, 0, .7);
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 11;
+}
+.logo-area{
+   padding-top: 25px;
+   cursor: pointer;
+}
+.menu-area{
+    padding-top: 10px;
+}
+.menu-area ul{
+    display: flex;
+}
+.menu-area ul li{
+    list-style: none;
+}
+.menu-area ul li a{
+    padding: 25px 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+}
+.menu-area ul li a:hover{
+	border-bottom: 3px solid #3498db;
+}
+.menu-btn{
+	float: right;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: none;
+}
+.menu-btn i{
+	color: #fff;
+}
+.menu-btn i:hover{
+	cursor: pointer;
+}
+
+.active{
+	border-bottom: 3px solid #3498db;
+}
+/*slider*/
+.slider-text{
+	text-transform: uppercase;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	color: #fff;
+}
+.slider-text h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.slider-text p{
+	font-size: 30px;
+}
+.slider-text a{
+	color: #fff;
+	font-size: 15px;
+	display: inline-block; 
+	background-color: #3498db;
+	text-transform: uppercase;
+	padding: 5px 15px;
+}
+.slider-text a:hover{
+	text-decoration: none;
+}
+.owl-nav{
+	font-size: 30px;
+	color: #fff;
+}
+.owl-prev{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	z-index: 11;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border:2px solid #fff;
+}
+.owl-prev i{
+	padding-left: 15px;
+}
+.owl-prev:hover{
+	background-color: #3498db;
+	border: 2px solid #3498db;
+	cursor: pointer;
+}
+.owl-next{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	z-index: 11;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.owl-next i{
+	padding-left: 15px;
+}
+.owl-next:hover{
+	background-color: #3498db;
+	border: 2px solid #3498db;
+	cursor: pointer;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    04 ABOUT AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+
+.about-area{
+   width: 100%;
+   height: 600px;
+   background-image: 
+   linear-gradient(
+   	rgba(255, 255, 255, 0.5),
+   	rgba(255, 255, 255, 0.5)
+   	),
+   url(images/aboutarea.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.about-area-top{
+   text-align: center;
+   padding-top: 50px;
+   font-size: 14px;
+}
+.about-area-top h2{
+	color: #727376;
+}
+.about-area-top p{
+	color: #656565;
+}
+.about-area-bottom{
+   padding: 50px;
+   text-align: center;
+   color: #656565;
+   position: relative;
+}
+.about-logo{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #656565;
+	position: absolute;
+	left: 33%;
+}
+.about-logo:hover{
+	border: 1px solid #3498db;
+}
+.about-logo img{
+	padding-top: 25px;
+}
+.about-area-bottom h4{
+   font-size: 15px;
+   padding-top: 150px;
+   padding-bottom: 5px;
+   display: inline-block;
+   position: relative;
+}
+.about-area-bottom h4:after{
+	content: '';
+	height: 2px;
+	width: 30px;
+	position: absolute;
+	left: 25%;
+	bottom: 0;
+	background-color: #3498db;
+}
+.about-area-bottom p{
+   font-size: 15px;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    05 GALLERY AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.gallery-area{
+	width: 100%;
+    height: 600px;
+}
+.gallery-top{
+	text-align: center;
+	padding-top: 60px;
+}
+.gallery-top h2{
+    text-transform: uppercase;
+    color: #727376;
+}
+.gallery-menu{
+	width: 80%;
+	margin: 0 auto;
+}
+.gallery-bottom ul{
+    display: flex;
+}
+.gallery-bottom ul li{
+    list-style: none;
+}
+.gallery-bottom ul li a{
+    padding: 25px 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+}
+.gallery-bottom ul li a:hover{
+	color: #3498db;
+}
+.gallery-bottom img{
+	width: 400px;
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.gallery-img{
+	position: relative;
+	overflow: hidden;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 100%;
+	left :4%;
+	transition: 1s;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.overlay img{
+	width: 40px;
+	height: 20px;
+	padding-left: 10px;
+}
+.overlay p{
+	padding: 5px;
+}
+.gallery-img:hover .overlay{
+	top: 0;
+}
+.image-bg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    06 BLOG AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.blog-area{
+	width: 100%;
+	height: 700px;
+	background-color: rgba(149, 165, 166, 0.22);
+}
+.blog-area-top{
+	text-align: center;
+	padding-top: 50px;
+}
+.blog-area-top h2{
+	color: #727376;
+}
+.blog-area-bottom .content + .content {
+	padding-left: 2%;
+}
+.blog-area-bottom img{
+	width: 350px;
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.blog-area-bottom h2{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.blog-area-bottom p{
+    font-size: 15px;
+}
+.blog-area-bottom p span{
+	color: blue;
+}
+.blog-img{
+	position: relative;
+	overflow: hidden;
+}
+.blog-overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 100%;
+	left :0;
+	transition: 1s;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blog-overlay img{
+	width: 40px;
+	height: 20px;
+	padding-left: 10px;
+}
+.blog-img:hover .blog-overlay{
+	top: 0;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    07 SERVICE AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.service-area{
+	width: 100%;
+	height: 600px;
+	background-color: #34495e;
+}
+.service-area-top{
+	padding: 50px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+.counter-value{
+	font-size: 100px;
+	font-weight: 700;
+	padding: 10px 50px;
+	color: #f1c40f;
+}
+.service-area-bottom h2{
+	color: #ecf0f1;
+}
+.service-box{
+	width: 100px;
+	height: 300px;
+	text-align: center;
+	border: 1px solid #2ecc71;
+	box-shadow: 5px 10px 20px #888888;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    08 SPONSORSHIP AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.sponsorship-area{
+	width: 100%;
+	height: 400px;
+	background-color: #EBEBEB;
+}
+.sponsorship-area-top{
+	padding: 50px 0;
+	text-align: center;
+}
+.sponsorship-area-top h2{
+	font-size: 30px;
+	font-weight: bold;
+	color: #727376;
+}
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````````````````````````````````````````````````````````````````````
+    09 CONTACT AREA
+
+``````````````````````````````````````````````````````````````````````````````````````
+*/
+.contact-area{
+    width: 100%;
+	height: 1100px;
+	background-image: 
+    linear-gradient(
+   	rgba(0, 0, 0, 0.7),
+   	rgba(0, 0, 0, 0.7)
+   	),
+	url(images/aboutarea.jpg);
+}
+.contact-area-top{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.contact-area-map{
+	height: 100%;
+}
+.contact-area-bottom{
+    padding: 80px;
+}
+.contact-bottom1 input{
+	width: 100%;
+	height: 40px;
+}
+.contact-bottom1 button{
+	height: 40px;
+	width: 90px;
+	color: #fff;
+	background-color: #3598DB;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+}
+.contact-bottom1 h4{
+	text-transform: uppercase;
+	color: #fff;
+}
+.contact-bottom1 .social-icon-area{
+	float: right;
+}
+.contact-bottom1 i{
+	color: #fff;
+	font-size: 30px;
+	padding-left: 5px;
+}
+.contact-bottom2{
+	padding: 50px 0;
+	color: #B5B5B5;
+	font-size: 13px;
+}
+
+.contact-bottom2 p{
+   float: right;
+   padding-left: 10px;
+}
+.contact-bottom3{
+   color: #B5B5B5;
+}
+
+/*
+.office{
+	background-color: #3498db;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+    bottom: 10%;
+    right: 3%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
