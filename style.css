@@ -264,6 +264,110 @@
 	width: 80%;
 	margin: 0 auto;
 }
+
+
+/*gallery lightbox manually starts*/
+.image-bg-gallery{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.imgg1{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg2{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg3{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg4{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg5{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg6{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg7{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg8{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg9{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+/*gallery lightbox manually ends*/
+
+
 .gallery-bottom ul{
     display: flex;
 }
@@ -322,14 +426,7 @@
 .gallery-img:hover .overlay{
 	top: 0;
 }
-.image-bg{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.8);
-}
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ``````````````````````````````````````````````````````````````````````````````````````
@@ -337,6 +434,49 @@
 
 ``````````````````````````````````````````````````````````````````````````````````````
 */
+
+/*blog lightbox manually starts*/
+.image-bg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.imgg3{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg7{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+.imgg9{
+	display: none;
+	width: 1000px;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 130px;
+}
+/*blog lightbox manually endss*/
+
+
 .blog-area{
 	width: 100%;
 	height: 700px;
@@ -352,13 +492,6 @@
 .blog-area-bottom .content + .content {
 	padding-left: 2%;
 }
-.blog-area-bottom img{
-	width: 350px;
-	height: 300px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	cursor: pointer;
-}
 .blog-area-bottom h2{
     font-size: 20px;
     padding: 10px 0;
@@ -372,6 +505,11 @@
 .blog-img{
 	position: relative;
 	overflow: hidden;
+	width: 350px;
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
 }
 .blog-overlay{
 	width: 100%;

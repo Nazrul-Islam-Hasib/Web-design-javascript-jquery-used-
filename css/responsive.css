@@ -16,9 +16,23 @@
     .menu-area ul li a{
         padding: 25px 0;
     }
-    .own-nav{
-    	position: absolute;
-    	top: 20px;
+    .owl-nav{
+	font-size: 20px;
+	overflow: hidden;
+    }
+    .owl-prev{
+	width: 30px;
+	height: 30px;
+    }
+    .owl-prev i{
+	padding-left: 10px;
+    }
+    .owl-next{
+	width: 30px;
+	height: 30px;
+    }
+    .owl-next i{
+	padding-left: 10px;
     }
 	/*Responsive Menu Ends*/
 
@@ -55,10 +69,11 @@
 	}
 	/*CONTACT-AREA*/
 	.contact-area{
-		height: 1700px;
+		height: 1770px;
 	}
 	.contact-bottom1 input{
 		margin: 20px 0;
+		width: 110px;
 	}
     .contact-bottom1 button{
     	margin: 20px 0;
