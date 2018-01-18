@@ -57,8 +57,7 @@
 ``````````````````````````````````````````````````````````````````````````````````````
 */
 .header-area{
-	position: fixed;
-	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -655,17 +654,18 @@
    color: #B5B5B5;
 }
 
-/*
-.office{
-	background-color: #3498db;
-	width: 50px;
-	height: 50px;
+.up-btn{
 	position: fixed;
-    bottom: 10%;
-    right: 3%;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	bottom: 10%;
+	right: 5%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
 }
-*/
+.up-btn i{
+	font-size: 40px;
+	cursor: pointer;
+	color: #e74c3c;
+}
